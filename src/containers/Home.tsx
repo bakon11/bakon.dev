@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 import LanguageMenu from "./LanguageMenu";
 import logo from "../assets/bakonpoollogo.png"
 import "./Home.css";
+import Updates from "../components/updates/Updates";
 
 const Home: React.FC = () => {
   const darkMode = useDarkMode();
@@ -43,11 +44,7 @@ const Home: React.FC = () => {
       <hr />
       <div>
         <CssBaseline />
-        <Grid container alignContent="center" alignItems="center" justify="center" direction="column">    
-          <Typography variant="caption">
-            Updates coming soon
-          </Typography>
-        </Grid>
+        <Updates />
         
         <Grid container alignContent="center" alignItems="center" justify="center" direction="column">
           <Typography variant="caption" style={{ position: "absolute", bottom: "10px" }}>
