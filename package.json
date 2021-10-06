@@ -1,7 +1,7 @@
 {
   "name": "@bakon11/bakon.dev",
   "version": "0.0.0-development",
-  "homepage": "https://github.io/bakon11/bakon.dev.git",
+  "homepage": "https://bakon.dev",
   "description": "",
   "main": "build/index.js",
   "scripts": {
