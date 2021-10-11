@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar, Toolbar, Typography, IconButton, Tooltip, Grid, Button } from "@material-ui/core"; //tslint:disable-line
+import { AppBar, Toolbar, Typography, IconButton, Tooltip, Grid, Button, Link } from "@material-ui/core"; //tslint:disable-line
 import useDarkMode from "use-dark-mode";
 import Brightness3Icon from "@material-ui/icons/Brightness3";
 import WbSunnyIcon from "@material-ui/icons/WbSunny";
@@ -7,6 +7,7 @@ import { lightTheme, darkTheme } from "../../themes/theme";
 import { useTranslation } from "react-i18next";
 import logo from "../../assets/bakonpoollogo.png"
 import LanguageMenu from "../../containers/LanguageMenu";
+import BlockchainMenu from "./BlockchainMenu";
 
 const Nav: React.FC = () => {
   const darkMode = useDarkMode();
@@ -22,11 +23,13 @@ const Nav: React.FC = () => {
             : logo //tslint:disable-line
           } width="100" />
           <Grid item>
-            <Button><Typography variant="caption">ABOUT</Typography></Button>
-            
-            <Button><Typography variant="caption">BLOCKCHAIN</Typography></Button>
+            <Link underline="none" href="/home"><Button aria-controls="simple-menu">HOME</Button></Link>
 
-            <Button><Typography variant="caption">DEVING</Typography></Button>
+            <Button aria-controls="simple-menu">ABOUT</Button>
+            
+            <BlockchainMenu />
+
+            <Button aria-controls="simple-menu">DEVING</Button>
 
             <LanguageMenu />
             <Tooltip title={t("Toggle Dark Mode")}>
