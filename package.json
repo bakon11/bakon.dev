@@ -1,7 +1,7 @@
 {
   "name": "@bakon11/bakon.dev",
   "version": "0.0.0-development",
-  "homepage": "https://bakon.dev",
+  "homepage": "./",
   "description": "",
   "main": "build/index.js",
   "scripts": {
