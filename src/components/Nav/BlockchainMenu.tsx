@@ -25,7 +25,7 @@ const BlockchainMenu = () => {
         onClose={handleClose}
       >
         <MenuItem onClick={handleClose}>Althea</MenuItem>
-        <Link color="inherit" underline="none" href="#/bakonpool"><MenuItem onClick={handleClose}>Cardano</MenuItem></Link>
+        <Link color="inherit" underline="none" href="/bakonpool"><MenuItem onClick={handleClose}>Cardano</MenuItem></Link>
         <MenuItem onClick={handleClose}>Gravity Bridge</MenuItem>
       </Menu>
       </>
