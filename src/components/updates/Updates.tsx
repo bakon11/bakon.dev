@@ -14,7 +14,7 @@ const Updates: React.FC = () => {
             10 Oct 2021
           </Typography>
           <div style={{border: "1px solid white", padding: "15px"}}>
-            Bakon pool has launched on the Cardano blockchain. Visit our <Link href="/bakonpool">Cardano Pool Page</Link> to find out more about it and how to become a delegator.
+            Bakon pool has launched on the Cardano blockchain. Visit our <Link href="#/bakonpool">Cardano Pool Page</Link> to find out more about it and how to become a delegator.
           </div>  
         </Grid>
         <div> 
