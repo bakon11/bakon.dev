@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 import "./Home.css";
 import Updates from "../../components/updates/Updates";
 import Nav from "../../components/Nav/Nav"
+import Twitter from "../../components/Twitter/Twitter";
 
 const Home: React.FC = () => {
   const darkMode = useDarkMode();
@@ -29,11 +30,15 @@ const Home: React.FC = () => {
           </Typography>
         </div>
         <div style={{width: "400px", float: "left", padding: "10px", margin: "5px", border: "1px solid white"}}>
-        <Typography><b style={{color: "green" }}>Updates</b></Typography>
+          <Typography><b style={{color: "green" }}>Updates</b></Typography>
           <hr />
           <Updates />
         </div>
-        
+        <div style={{width: "400px", float: "left", padding: "10px", margin: "5px", border: "1px solid white"}}>
+          <Typography><b style={{color: "green" }}>Bakon Pool Twitter</b></Typography>
+          <hr />
+          <Twitter user={"bakonpool"} />
+        </div>
         <Grid container alignContent="center" alignItems="center" justify="center" direction="column">
           <Typography variant="caption" style={{ position: "absolute", bottom: "10px" }}>
             <hr />
