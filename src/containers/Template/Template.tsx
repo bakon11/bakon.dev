@@ -13,7 +13,7 @@ const Template: React.FC = () => {
 
   return (
     <MuiThemeProvider theme={theme}>
-      <Nav />
+      <Nav page="template" />
       <hr />
       <div>
         <CssBaseline />        

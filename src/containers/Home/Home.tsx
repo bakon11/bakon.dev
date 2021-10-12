@@ -16,11 +16,23 @@ const Home: React.FC = () => {
 
   return (
     <MuiThemeProvider theme={theme}>
-      <Nav />
+      <Nav page="home" />
       <hr />
-      <div>
+      <div style={{padding: "10px"}}>
         <CssBaseline />
-        <Updates />
+        <div style={{width: "400px", float: "left", padding: "10px", margin: "5px", border: "1px solid white"}}>
+          <Typography><b style={{color: "green" }}>Welcome</b></Typography>
+          <hr />          
+          <Typography>
+            Welcome to bakon.dev where you can learn about the projects I work on and support.<br /><br />
+            And also learn about my staking validator pools on the Cardano, Althea(Cosmos) and Gravity Bridge blockchain networks.
+          </Typography>
+        </div>
+        <div style={{width: "400px", float: "left", padding: "10px", margin: "5px", border: "1px solid white"}}>
+        <Typography><b style={{color: "green" }}>Updates</b></Typography>
+          <hr />
+          <Updates />
+        </div>
         
         <Grid container alignContent="center" alignItems="center" justify="center" direction="column">
           <Typography variant="caption" style={{ position: "absolute", bottom: "10px" }}>

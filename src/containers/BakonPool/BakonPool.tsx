@@ -18,7 +18,7 @@ const BakonPool: React.FC = () => {
 
   return (
     <MuiThemeProvider theme={theme}>
-      <Nav />
+      <Nav page="cardanoPool" />
       <hr />
       <CssBaseline />
       <div>

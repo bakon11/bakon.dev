@@ -10,7 +10,7 @@ const Updates: React.FC = () => {
     <div>
       <Grid container alignContent="center" alignItems="center" justify="center" direction="column">
         <Grid item>
-          <Typography variant="caption">
+          <Typography variant="caption" style={{color: "green" }}>
             10 Oct 2021
           </Typography>
           <div style={{border: "1px solid white", padding: "15px"}}>
@@ -21,7 +21,7 @@ const Updates: React.FC = () => {
           <hr />
         </div>
         <Grid item>
-          <Typography variant="caption">
+          <Typography variant="caption" style={{color: "green" }}>
             06 Oct 2021
           </Typography>
           <div style={{border: "1px solid white", padding: "15px"}}>

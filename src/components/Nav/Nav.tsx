@@ -9,19 +9,38 @@ import logo from "../../assets/bakonpoollogo.png"
 import LanguageMenu from "../../containers/LanguageMenu";
 import BlockchainMenu from "./BlockchainMenu";
 
-const Nav: React.FC = () => {
+type navProps = {
+  page: string,
+};
+
+const Nav = ( { page }: navProps ) => {
   const darkMode = useDarkMode();
   const { t } = useTranslation();
-  const theme = darkMode.value ? darkTheme : lightTheme;
+
+  const displayLogo = () => {
+    if ( page == "home" ){
+      return (
+        <b style={{color: "green" }}>BAKON.DEV</b>
+      )
+    }else {
+      return (
+        <img alt="logo" src={darkMode.value
+          ? logo //tslint:disable-line
+          : logo //tslint:disable-line
+        } width="100" />
+      )
+    }
+  }
 
   return (
     <AppBar position="sticky" color="default" elevation={0}>
       <Toolbar>
         <Grid container alignContent="center" alignItems="center" justify="space-between">
-          <img alt="logo" src={darkMode.value
-            ? logo //tslint:disable-line
-            : logo //tslint:disable-line
-          } width="100" />
+          {
+            page &&
+              displayLogo()
+          }
+
           <Grid item>
             <Link underline="none" href="/home"><Button aria-controls="simple-menu">HOME</Button></Link>
 
