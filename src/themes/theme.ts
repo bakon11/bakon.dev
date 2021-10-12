@@ -43,7 +43,7 @@ export const darkTheme = createMuiTheme({
   overrides: {
     MuiAppBar: {
       root: {
-        background: "transparent !important",
+        background: "grey[900] !important",
       },
     },
     MuiTable: {

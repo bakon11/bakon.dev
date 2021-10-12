@@ -39,12 +39,6 @@ const Home: React.FC = () => {
           <hr />
           <Twitter user={"bakonpool"} />
         </div>
-        <Grid container alignContent="center" alignItems="center" justify="center" direction="column">
-          <Typography variant="caption" style={{ position: "absolute", bottom: "10px" }}>
-            <hr />
-            {t("Date", { date: new Date() })}
-          </Typography>
-        </Grid>
       </div>
     </MuiThemeProvider >
   );

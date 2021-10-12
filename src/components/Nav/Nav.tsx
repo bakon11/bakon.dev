@@ -40,7 +40,6 @@ const Nav = ( { page }: navProps ) => {
             page &&
               displayLogo()
           }
-
           <Grid item>
             <Link underline="none" href="/home"><Button aria-controls="simple-menu">HOME</Button></Link>
 
