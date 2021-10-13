@@ -18,8 +18,9 @@ const BakonPool: React.FC = () => {
       <hr />
       <CssBaseline />
       <Adapools />
-      <div >
-        <div style={{width: "700px", padding: "10px", margin: "10 auto", border: "1px solid white"}}>
+      <Grid container alignContent="center" alignItems="center" justify="center" direction="column">
+      <div style={{}}>
+        <div style={{width: "700px", padding: "10px", border: "1px solid white"}}>
           <Typography><b style={{color: "green" }}>Welcome</b></Typography> 
             to my Cardano Stake Pool page. I started running the Bakon Pool during the ITN but have been following Cardano and its journey since early 2018.<br /><br />
             If you are looking to Stake your ADA with Bakon Stake Pool you can find instructionson how to stake with the official Daedalus wallet and Emurgo Yorio Wallet right below <br /><br />
@@ -30,24 +31,27 @@ const BakonPool: React.FC = () => {
             since it's a lot harder to spoof those since they are varified then lil ol me's personal youtube videos and download links.<br />
         </div>
       </div>
-      <div style={{marginLeft: "28%"}}>
-        <div style={{width: "400px", padding: "10px", float: "left",  border: "1px solid white", margin: "10px"}}>
-          <Typography><b style={{color: "green" }}>Staking With Daedalus Wallet.</b></Typography>
-          <hr />
-          Stake your ADA using the Daedalus Wallet:<br />
-          <a href="https://www.youtube.com/watch?v=VtkjM_0k4R0">https://www.youtube.com/watch?v=VtkjM_0k4R0</a><br /><br />
-          Daedalus Wallet Official Website Download:<br />
-          <a href="https://daedaluswallet.io/en/download/">https://daedaluswallet.io/en/download/</a>
+      </Grid>
+      <Grid container alignContent="center" alignItems="center" justify="center" direction="column">
+        <div style={{}}>
+          <div style={{width: "400px", padding: "10px", float: "left",  border: "1px solid white", margin: "10px"}}>
+            <Typography><b style={{color: "green" }}>Staking With Daedalus Wallet.</b></Typography>
+            <hr />
+            Stake your ADA using the Daedalus Wallet:<br />
+            <a href="https://www.youtube.com/watch?v=VtkjM_0k4R0">https://www.youtube.com/watch?v=VtkjM_0k4R0</a><br /><br />
+            Daedalus Wallet Official Website Download:<br />
+            <a href="https://daedaluswallet.io/en/download/">https://daedaluswallet.io/en/download/</a>
+          </div>
+          <div style={{width: "400px", padding: "10px", float: "left", border: "1px solid white", margin: "10px"}}>
+            <Typography><b style={{color: "green" }}>Staking With Yorio Wallet.</b></Typography>
+            <hr />
+            Yorio Wallet Official Website:<br />
+            <a href="https://yoroi-wallet.com/#/">https://yoroi-wallet.com/#/</a><br /><br />
+            Yorio Wallet Introduction:<br />
+            <a href="https://www.youtube.com/watch?v=yYUUWOBLyLw" >https://www.youtube.com/watch?v=yYUUWOBLyLw</a>
+          </div>
         </div>
-        <div style={{width: "400px", padding: "10px", float: "left", border: "1px solid white", margin: "10px"}}>
-          <Typography><b style={{color: "green" }}>Staking With Yorio Wallet.</b></Typography>
-          <hr />
-          Yorio Wallet Official Website:<br />
-          <a href="https://yoroi-wallet.com/#/">https://yoroi-wallet.com/#/</a><br /><br />
-          Yorio Wallet Introduction:<br />
-          <a href="https://www.youtube.com/watch?v=yYUUWOBLyLw" >https://www.youtube.com/watch?v=yYUUWOBLyLw</a>
-        </div>
-      </div>
+      </Grid>
     </MuiThemeProvider >
   );
 };
