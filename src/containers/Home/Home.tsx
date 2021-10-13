@@ -51,12 +51,14 @@ const Home: React.FC = () => {
           <div style={{minWidth: "400px", height: "300px", float: "left", padding: "10px", margin: "5px", border: "1px solid white"}}>
             <Typography><b style={{color: "green" }}>Bakon Validator Althea</b></Typography>
             <hr />
-            Coming Soon
+            Currently in testing - Visit <a href="https://althea.net">Althea.net</a> for more information on Althea and how it's and pioneering
+            decentralized Internet available for everyone and also our Althea section.
           </div>
           <div style={{minWidth: "400px", height: "300px", float: "left", padding: "10px", margin: "5px", border: "1px solid white"}}>
             <Typography><b style={{color: "green" }}>Bakon Validator Gravity Bridge</b></Typography>
             <hr />
-            Coming Soon
+            Currently in testing - Visit <a href="https://www.gravitybridge.net/">gravitybridge.net</a> for more information on the Gravity bridge and how it's going to "Bridge" the gap,
+            between Ethereum and the Cosmos HUB. Which allow to bring ETH assets to Cosmos blockchain and vice versa.
           </div>
         </div>
       </Grid>
