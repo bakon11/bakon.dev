@@ -43,18 +43,18 @@ const Home: React.FC = () => {
       </Grid>
       <Grid container alignContent="center" alignItems="center" justify="center" direction="column">
         <div style={{}}>
-          <div style={{maxWidth: "400px", height: "300px", float: "left", padding: "10px", margin: "5px", border: "1px solid white"}}>
+          <div style={{maxWidth: "600px", height: "300px", float: "left", padding: "10px", margin: "5px", border: "1px solid white"}}>
             <Typography><b style={{color: "green" }}>Bakon Pool Cardano</b></Typography>
             <hr />
             <Adapools />
           </div>
-          <div style={{maxWidth: "400px", height: "300px", float: "left", padding: "10px", margin: "5px", border: "1px solid white"}}>
+          <div style={{maxWidth: "600px", height: "300px", float: "left", padding: "10px", margin: "5px", border: "1px solid white"}}>
             <Typography><b style={{color: "green" }}>Bakon Validator Althea</b></Typography>
             <hr />
             Currently in testing - Visit <a href="https://althea.net">Althea.net</a> for more information on Althea and how it's and pioneering
             decentralized Internet available for everyone and also our Althea section.
           </div>
-          <div style={{maxWidth: "400px", height: "300px", float: "left", padding: "10px", margin: "5px", border: "1px solid white"}}>
+          <div style={{maxWidth: "600px", height: "300px", float: "left", padding: "10px", margin: "5px", border: "1px solid white"}}>
             <Typography><b style={{color: "green" }}>Bakon Validator Gravity Bridge</b></Typography>
             <hr />
             Currently in testing - Visit <a href="https://www.gravitybridge.net/">gravitybridge.net</a> for more information on the Gravity bridge and how it's going to "Bridge" the gap,
