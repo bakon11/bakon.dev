@@ -16,7 +16,7 @@ const Twitter = ( { user }: twitterProps) => {
 
   return (
     <section className="twitterContainer">
-      <div className="twitter-embed" style={{maxHeight: "400px", overflow: "false"}}>
+      <div className="twitter-embed" style={{height: "500px", overflow: "false"}}>
         <a
           className="twitter-timeline"
           data-theme="dark"
