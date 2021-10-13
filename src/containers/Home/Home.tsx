@@ -1,8 +1,6 @@
 import React from "react";
-import { MuiThemeProvider, AppBar, Toolbar, Typography, IconButton, Tooltip, CssBaseline, Grid, Button } from "@material-ui/core"; //tslint:disable-line
+import { MuiThemeProvider, Typography, CssBaseline } from "@material-ui/core"; //tslint:disable-line
 import useDarkMode from "use-dark-mode";
-import Brightness3Icon from "@material-ui/icons/Brightness3";
-import WbSunnyIcon from "@material-ui/icons/WbSunny";
 import { lightTheme, darkTheme } from "../../themes/theme";
 import { useTranslation } from "react-i18next";
 import "./Home.css";

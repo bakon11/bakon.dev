@@ -24,10 +24,12 @@ const Nav = ( { page }: navProps ) => {
       )
     }else {
       return (
+        <>
         <img alt="logo" src={darkMode.value
           ? logo //tslint:disable-line
           : logo //tslint:disable-line
         } width="100" />
+        </>
       )
     }
   }
